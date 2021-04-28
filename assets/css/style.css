@@ -83,3 +83,30 @@ header nav ul li a:hover {
     right: 60px;
     color: white;
 }
+/* Contain, Section Title Style */
+.flex-row {
+    width: 100%;
+}
+.container-project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-title {
+    font-size: 45px;
+    padding: 20px 40px;
+    width: 20%;
+    text-align: right;
+}
+/* About Me Style */
+.about-me {
+    display: flex;
+}
+.about-me p {
+    line-height: 1.5;
+    border-left: 3px solid;
+    padding: 40px;
+    width: 80%;
+}
+/* Work Style */
