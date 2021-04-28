@@ -208,3 +208,99 @@ header nav ul li a:hover {
 footer {
     float: right;
 }
+/* Media Queries for Smaller Devices | Compatibility Style */
+@media screen and (max-width: 980px) {
+
+header {
+    display: block;
+    text-align: center;
+}
+header h1 {
+    width: 100%;
+}
+header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.container-project {
+    flex-direction: column;
+    padding: 20px 40px;
+}
+.about-me, .my-work, .contact-section {
+    display: block;
+}
+.section-title {
+    width: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+.about-me p {
+    width: auto;
+}
+.container {
+    display: block;
+    width: auto;
+}
+.container-projects {
+    min-width: 300px;
+    min-height: 150px;
+}
+.contact-section li {
+    display: block;
+    padding: 10px;
+}
+        
+    
+}
+@media screen and (max-width: 768px) {
+    
+.section-title {
+    text-align: left;
+    font-size: 40px;
+}
+header {
+    padding: 0;
+}
+header h1 {
+    font-size: 30px;
+    margin: 0px;
+    padding: 5px 10px;
+}
+header nav ul li a {
+    font-size: 20px;
+}
+.section-title {
+    font-size: 30px;
+}
+} 
+@media screen and (max-width: 575px) {
+    
+header nav ul li a {
+    margin-top: 0;
+    font-size: 18px;
+    flex-wrap: none;
+}
+.hero {
+    height: 50px;
+}
+.container-project {
+    flex-direction: column;
+    padding: 10px;
+}
+.about-me p {
+    font-size: 16px;
+}
+.container-projects {
+    min-width: 100%;
+}
+.figure-text {
+    height: auto;
+}
+.contact-list-row {
+    text-decoration: none;
+    font-size: 17px;
+}
+}
