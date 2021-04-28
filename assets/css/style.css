@@ -167,7 +167,7 @@ header nav ul li a:hover {
 .project1 {
     grid-column: 1/4;
     grid-row: 1/3;
-    background-image: url(../images/run-buddy.png);
+    background-image: url(../images/run-buddy.PNG);
 }
 .project2 {
     background-image: url(../images/horiseon.PNG);
