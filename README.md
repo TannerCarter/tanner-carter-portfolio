@@ -19,8 +19,7 @@ My portfolio that showcases my work projects. In this challenge I had to make a 
 
 # Product
 
-<img src=" ![tannercarter github io_tanner-carter-portfolio](https://user-images.githubusercontent.com/80929740/116797256-b26a6480-aa98-11eb-8a11-0d6e9cffdbbf.png)
-" width="200" height="400" alt="A screenshot of my Portfolio Version 1"/>
+<img src="https://user-images.githubusercontent.com/80929740/116797256-b26a6480-aa98-11eb-8a11-0d6e9cffdbbf.png" width="200" height="400" alt="Screen shot of Tanner Carter's Portfolio"/>
 
 # Links
 
