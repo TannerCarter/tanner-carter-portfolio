@@ -26,8 +26,8 @@ header {
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
-    z-index: 9999;
     background-image: url("../images/blue-fog.png");
+    z-index: 9999;
     top: 0;
     position: sticky;
     position: -webkit-sticky;
@@ -110,78 +110,36 @@ header nav ul li a:hover {
     width: 80%;
 }
 /* Work Style */
+.container-work{
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .my-work {
     display: flex;
-}
-.container {
+} 
+.grid-start{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 15px;
+    border-left: 3px solid rgba(14, 14, 88, 0.651);
     padding: 40px;
     width: 80%;
-    border-left: 3px solid rgba(14, 14, 88, 0.651);
 }
-.container-projects {
-    min-height: 100px;
-    min-width: 300px;
-    border: 5px solid rgba(14, 14, 88, 0.651);
-    border-color: rgba(14, 14, 88, 0.651);
-    position: relative;
-}
-.container-projects::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
+.grid-img {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(315deg, #08868f 0%, #d3d3d3 74%);
-    opacity: .0;
+    border: solid 3px rgba(14, 14, 88, 0.651); 
 }
-.container-projects:hover::after {
-    opacity: .5;
+.grid-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    position: relative;
+    padding-bottom: 5%;
 }
-.figure-text {
-    position: absolute;
-    z-index: 1;
-    height: 50px;
-    width: 20%;
-    background-color: rgba(0, 0, 0, 0.500);
-    color: white;
-    text-align: left;
-}
-.figure-text p {
-    position: absolute;
-    z-index: 2;
-    font-size: 12px;
-}
-.figure-text a {
-    text-decoration: none;
-    color: white;  
-}
-.figure-text a:hover {
-    text-shadow: none;
-    color: aqua;
-    background: rgba(0, 0, 0, 0.500);
-}
-.project1 {
-    grid-column: 1/4;
-    grid-row: 1/3;
-    background-image: url(../images/run-buddy.PNG);
-}
-.project2 {
-    background-image: url(../images/horiseon.PNG);
-    background-size: cover;
-    background-position: left;
-}
-.project3 {
-    background-image: url(../images/java.PNG);
-    background-size: cover;
-    background-position: left;
-}
-.project4 {
-    background-image: url(../images/taskinator.PNG);
-    background-size: cover;
+figcaption{
+    text-align: center;
 }
 /* Contact Style */
 .contact-section {
@@ -194,6 +152,7 @@ header nav ul li a:hover {
 .contact-list {
     width: 80%;
     padding: 40px;
+    padding-top: 3%;
     border-left: 3px solid rgba(14, 14, 88, 0.651);
 }
 .contact-list a:hover {
@@ -205,30 +164,32 @@ header nav ul li a:hover {
     color: white;
     text-decoration: none;
 }
-footer {
-    float: right;
-}
 /* Media Queries for Smaller Devices | Compatibility Style */
 @media screen and (max-width: 980px) {
 
 header {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 header h1 {
     width: 100%;
+    text-align: center;
+    text-align: center;
 }
 header nav ul {
     margin-top: 20px;
     width: 100%;
     justify-content: center;
+    text-align: center;
 }
-.container-project {
-    flex-direction: column;
-    padding: 20px 40px;
+header nav ul li a {
+    font-size: 20px;
 }
-.about-me, .my-work, .contact-section {
-    display: block;
+.hero {
+    width: 100%;
+}
+.hero-head {
+    width: 100%;
 }
 .section-title {
     width: 0;
@@ -237,30 +198,28 @@ header nav ul {
     width: 100%;
     text-align: left;
 }
+.about-me, .my-work, .contact-section {
+    display: block;
+}
 .about-me p {
     width: auto;
 }
-.container {
+.grid-start {
     display: block;
     width: auto;
-}
-.container-projects {
+  }
+.grid-item {
     min-width: 300px;
     min-height: 150px;
-}
-.contact-section li {
+  }
+.contact-section {
     display: block;
     padding: 10px;
 }
-        
     
 }
 @media screen and (max-width: 768px) {
     
-.section-title {
-    text-align: left;
-    font-size: 40px;
-}
 header {
     padding: 0;
 }
@@ -272,9 +231,7 @@ header h1 {
 header nav ul li a {
     font-size: 20px;
 }
-.section-title {
-    font-size: 30px;
-}
+
 } 
 @media screen and (max-width: 575px) {
     
@@ -286,21 +243,11 @@ header nav ul li a {
 .hero {
     height: 50px;
 }
-.container-project {
-    flex-direction: column;
-    padding: 10px;
-}
 .about-me p {
     font-size: 16px;
 }
-.container-projects {
-    min-width: 100%;
-}
-.figure-text {
-    height: auto;
-}
 .contact-list-row {
-    text-decoration: none;
-    font-size: 17px;
+    
+    font-size: 16px;
 }
 }
