@@ -127,37 +127,19 @@ header nav ul li a:hover {
     padding: 40px;
     width: 80%;
 }
-.grid-item::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.grid-item:hover::after {
-    opacity: .5;
-}
 .grid-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border: solid 3px rgba(14, 14, 88, 0.651); 
-}
-figcaption{
-    caption-side: top;
-    font-size: 20px;
-    font-style: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    color:  rgb(51, 105, 105);
-    background-color: var(--background-color);
-    padding: 10px;
-    text-align: center;
 }
 .grid-1 {
     grid-column-start: 1;
     grid-column-end: 4;
     position: relative;
     padding-bottom: 5%;
+}
+figcaption{
+    text-align: center;
 }
 /* Contact Style */
 .contact-section {
@@ -170,6 +152,7 @@ figcaption{
 .contact-list {
     width: 80%;
     padding: 40px;
+    padding-top: 3%;
     border-left: 3px solid rgba(14, 14, 88, 0.651);
 }
 .contact-list a:hover {
@@ -181,34 +164,58 @@ figcaption{
     color: white;
     text-decoration: none;
 }
-footer {
-    float: right;
-}
 /* Media Queries for Smaller Devices | Compatibility Style */
 @media screen and (max-width: 980px) {
 
 header {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 header h1 {
     width: 100%;
+    text-align: center;
+    text-align: center;
 }
 header nav ul {
     margin-top: 20px;
     width: 100%;
     justify-content: center;
+    text-align: center;
 }
-
-.about-me, .contact-section {
+header nav ul li a {
+    font-size: 20px;
+}
+.hero {
+    width: 100%;
+}
+.hero-head {
+    width: 100%;
+}
+.section-title {
+    width: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: left;
+}
+.about-me, .my-work, .contact-section {
     display: block;
 }
 .about-me p {
     width: auto;
 }
-.container{
-    width: 100%;
+.grid-start {
+    display: block;
+    width: auto;
   }
+.grid-item {
+    min-width: 300px;
+    min-height: 150px;
+  }
+.contact-section {
+    display: block;
+    padding: 10px;
+}
     
 }
 @media screen and (max-width: 768px) {
@@ -236,14 +243,11 @@ header nav ul li a {
 .hero {
     height: 50px;
 }
-
 .about-me p {
     font-size: 16px;
 }
-
-
 .contact-list-row {
-    text-decoration: none;
-    font-size: 17px;
+    
+    font-size: 16px;
 }
 }
